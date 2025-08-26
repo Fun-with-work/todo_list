@@ -1,1 +1,1 @@
-export const greeting = "TO DO LIST";
+export const list = "TO DO LIST";
