@@ -1,3 +1,10 @@
 body {
-    background-color: rebeccapurple;
+    background-color: rgba(118, 129, 95, 0.7);
+}
+
+#restaurant-image {
+    width: 40%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
 }
