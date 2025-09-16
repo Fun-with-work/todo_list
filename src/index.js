@@ -8,8 +8,4 @@ import {list} from "./greeting.js";
 
 console.log(list);
 
-// import theImage from "./images/restaurant-img.jpg";
-// const img = document.createElement("img");
-// img.src = theImage;
-// img.id = "restaurant-image";
-// document.body.appendChild(img);
+
