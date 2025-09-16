@@ -1,14 +1,46 @@
 #side-menu {
-    background-color:  rgb(250, 252, 248);
-    height: 90vh;
+    background-color:  rgb(219, 239, 199);
+    height: 92.3vh;
     grid-column: 1/2;
     grid-row: 1/3;
     display: flex;
     align-items: center;
     /* justify-content:flex-end; */
-    padding: 2rem;
+    padding: 2rem 4rem;
+    /* padding-left: 4rem; */
     font-size: 1.5rem;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
+#side-menu-heading{
+    
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.project-buttons {
+    background-color:  rgba(221, 197, 153, 0.748);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.project-buttons:hover {
+    background-color:  rgb(149, 116, 73);
+    color: white;
+}
+
+#projects-section {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
