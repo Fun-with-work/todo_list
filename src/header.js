@@ -8,5 +8,5 @@ document.body.appendChild(header);
 const taskBar = document.createElement("div");
 taskBar.id = "task-bar";
 taskBar.className = "task-bar";
-taskBar.textContent = "This is the task bar section";
+taskBar.textContent = "Current Project: All Tasks";
 header.appendChild(taskBar);
