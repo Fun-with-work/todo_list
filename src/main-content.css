@@ -1,6 +1,6 @@
 #main-content {
-    background-color:  rgb(250, 252, 248);
-    height: 82vh;
+    background-color:  rgb(240, 245, 198);
+    height: 83.9vh;
     /* width: 80%; */
     float:right;
     display: flex;
@@ -10,6 +10,37 @@
     font-size: 1.5rem;
     grid-row: 2/3;
     grid-column: 2/3;
+    padding-right: 4rem;
+    background-image: url('./images/businessman.jpg');
+    background-size: cover;
+    background-position: center;
     /* display: grid;
     grid-template-rows: auto 1fr auto; */
 }
+
+#tasks-container {
+    width: 90%;
+    height: 90%;
+    /* background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(222, 223, 220);
+    border-radius: 0.3rem; */
+    padding: 1rem;
+    overflow-y: auto;
+    /* background-image: url('./images/businessman.jpg');
+    background-size: cover;
+    background-position: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* #work-image {
+    width: auto;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+} */
