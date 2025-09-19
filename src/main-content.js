@@ -1,4 +1,5 @@
 import "./main-content.css";
+import { businessmanImage, checklistEditedImage } from "./image-variables";
 
 const mainContent = document.createElement("div");
 mainContent.id = "main-content";
@@ -11,7 +12,7 @@ tasksContainer.className = "tasks-container";
 mainContent.appendChild(tasksContainer);    
 
 const welcomeMessage = document.createElement("h1");
-welcomeMessage.textContent = "Welcome to Your To-Do List!";
+welcomeMessage.textContent = "Welcome to your To-Do list!";
 welcomeMessage.id = "welcome-message";
 tasksContainer.appendChild(welcomeMessage);
 
