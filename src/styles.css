@@ -5,11 +5,13 @@
 }
 
 body {
-    background-color: rgba(242, 248, 230, 0.786);
+    background-color: rgba(20, 20, 19, 0.786);
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 10fr 1fr;
     grid-template-columns: 1fr 4fr; 
+    padding-right: 10rem;
+    padding-left: 10rem;
     /* grid-gap: 1rem; */
     /* align-items: center; */
 }
