@@ -14,7 +14,7 @@
 #task-bar {
     background-color:  rgb(254, 255, 253);
     float:right;
-    width: 90%;
+    /* width: 90%; */
     display: flex;
     align-items: center;
     justify-content:flex-end;
