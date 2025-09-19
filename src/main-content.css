@@ -14,8 +14,23 @@
     background-image: url('./images/businessman.jpg');
     background-size: cover;
     background-position: center;
+    animation: imageSwitch 50s infinite;
+    transition-duration: 5s;
     /* display: grid;
     grid-template-rows: auto 1fr auto; */
+}
+
+#checklist-edited-image {
+    background-size: cover;
+    background-position: center;
+    animation: imageSwitch 50s infinite;
+    transition-duration: 5s;
+}
+
+@keyframes imageSwitch {
+    0% {background-image: url('./images/businessman.jpg');}
+    50% {background-image: url('./images/checklist-edited.jpg');}
+    100% {background-image: url('./images/businessman.jpg');}
 }
 
 #tasks-container {
@@ -30,7 +45,7 @@
     background-size: cover;
     background-position: center; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
 }
