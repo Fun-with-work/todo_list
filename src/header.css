@@ -3,12 +3,11 @@
     height: 5.5rem;
     width: 100%;
     float:right;
+    grid-row: 1/2;
     display: flex;
     align-items: center;
     justify-content:flex-end;
     padding: 2rem 4rem;
-    grid-column: 2/3;
-    grid-row: 1/2;
 }
 
 #task-bar {
