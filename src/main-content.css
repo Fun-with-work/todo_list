@@ -1,14 +1,11 @@
 #main-content {
     background-color:  rgb(240, 245, 198);
-    height: 83.9vh;
-    /* width: 80%; */
+    height: 100%;
     float:right;
     display: flex;
     align-items: center;
     justify-content:center;
-    /* padding: 2rem; */
     font-size: 1.5rem;
-    grid-row: 2/3;
     grid-column: 2/3;
     padding-right: 4rem;
     background-image: url('./images/businessman.jpg');
@@ -16,8 +13,6 @@
     background-position: center;
     animation: imageSwitch 50s infinite;
     transition-duration: 5s;
-    /* display: grid;
-    grid-template-rows: auto 1fr auto; */
 }
 
 #checklist-edited-image {
