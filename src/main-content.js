@@ -1,10 +1,11 @@
 import "./main-content.css";
 import { businessmanImage, checklistEditedImage } from "./image-variables";
 
+export function createMainContent() {   
+
 const mainContent = document.createElement("div");
 mainContent.id = "main-content";
 mainContent.className = "main-content";
-document.body.appendChild(mainContent);
 
 const tasksContainer = document.createElement("div");
 tasksContainer.id = "tasks-container";
@@ -25,5 +26,8 @@ tasksContainer.appendChild(infoMessage);
 const tasksHeading = document.createElement("h2");
 // tasksHeading.textContent = "All Tasks";
 tasksHeading.id = "tasks-heading";
-tasksContainer.appendChild(tasksHeading);   
+tasksContainer.appendChild(tasksHeading);  
 
+return mainContent;
+
+}
