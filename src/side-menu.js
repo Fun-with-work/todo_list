@@ -14,7 +14,7 @@ sideMenu.id = "side-menu";
 sideMenu.className = "side-menu";
 
 const sideMenuHeading = document.createElement("h5");
-sideMenuHeading.textContent = "Side Menu";
+sideMenuHeading.textContent = "SIDE MENU";
 sideMenuHeading.id = "side-menu-heading";
 sideMenu.appendChild(sideMenuHeading);
 
@@ -39,5 +39,5 @@ sideMenuContent.appendChild(myProjects);
 
 return sideMenu;
 }
-
+ 
 
