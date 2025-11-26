@@ -1,5 +1,5 @@
 #header {
-    background-color:  rgb(239, 233, 194);
+    background-color:  rgb(246, 245, 244);
     height: 5.5rem;
     width: 100%;
     float:right;
@@ -8,6 +8,7 @@
     align-items: center;
     justify-content:flex-end;
     padding: 2rem 4rem;
+    border-bottom: 1px solid rgb(222, 223, 220);
 }
 
 #task-bar {
@@ -19,6 +20,6 @@
     justify-content:flex-end;
     padding: 0.5rem;
     font-size: 1.5rem;
-    border: 1px solid rgb(222, 223, 220);
+    border: 2px solid rgb(222, 223, 220);
     border-radius: 0.3rem;
 }
