@@ -7,14 +7,14 @@
 body {
     background-color: rgba(120, 120, 118, 0.786);
     height: 100vh;
-    padding-right: 10rem;
-    padding-left: 10rem;
+    display: flex;
+    justify-content: center;
 }
 
 
 #content {
     display: grid;
-    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
 }
 
 #main-layout {
