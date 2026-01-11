@@ -65,8 +65,14 @@ function createTodoForm() {
 
     const submitButton = document.createElement("button");
     submitButton.type = "submit";
-    submitButton.textContent = "Add Task";
+    submitButton.textContent = "Add this Task";
     todoForm.appendChild(submitButton);
+   
+    const cancelButton = document.createElement("button");
+    cancelButton.type = "submit";
+    cancelButton.id = "cancel-button";
+    cancelButton.textContent = "Cancel";
+    todoForm.appendChild(cancelButton);
 
     return todoForm;
 }
@@ -76,16 +82,28 @@ addTaskButton.addEventListener("click", () => {
     const todoForm = createTodoForm();
 
     if (mainContentArea) {
+        mainContentArea.innerHTML = "";
         mainContentArea.appendChild(todoForm);
     }
+
+    document.getElementById("cancel-button").addEventListener("click", (e) => {
+    todoForm.remove();
+});
 
 
     todoForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
+        const newTask = {
+            title: todoForm.querySelector("#task-title").value,
+            description: todoForm.querySelector("#task-desc").value,
+            dueDate: todoForm.querySelector("#task-due-date").value,
+            priority: todoForm.querySelector("#task-priority").value,
+        };
+
         console.log("New Task Added:", newTask);
 
-        todoForm.remove();
+        todoForm.reset();
     });
 });
 
