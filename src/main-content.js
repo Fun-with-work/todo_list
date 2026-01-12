@@ -13,12 +13,17 @@ tasksContainer.className = "tasks-container";
 mainContent.appendChild(tasksContainer);    
 
 const welcomeMessage = document.createElement("p");
-welcomeMessage.textContent = "From chaos to order.Welcome to your task manager!";
+welcomeMessage.textContent = "From chaos to order";
 welcomeMessage.id = "welcome-message";
 tasksContainer.appendChild(welcomeMessage);
 
+const welcomeMessage2 = document.createElement("p");
+welcomeMessage2.textContent = "WELCOME TO YOUR TASK MANAGER!";
+welcomeMessage2.id = "welcome-message2";
+tasksContainer.appendChild(welcomeMessage2);
+
 const messageInfo = document.createElement("p");
-messageInfo.textContent = "Add a new task to get started or select a project from the side menu to view tasks.";
+messageInfo.textContent = "Press the New Task button to get started or Projects to view current tasks";
 messageInfo.id = "message-info";
 tasksContainer.appendChild(messageInfo);
 
