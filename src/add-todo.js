@@ -1,7 +1,6 @@
 import "./add-todo.css";
 import { addTaskButton } from "./side-menu.js";
-
-console.log(addTaskButton.textContent);
+import { createMainContent } from "./main-content.js";
 
 function createTodoForm() {
     const todoForm = document.createElement("form");
@@ -43,6 +42,19 @@ function createTodoForm() {
     dueDateInput.name = "task-due-date";
     dueDateInput.required = true;
     todoForm.appendChild(dueDateInput);
+    
+    const notesLabel = document.createElement("label");
+    notesLabel.textContent = "Notes:";
+    notesLabel.htmlFor = "task-notes";
+    todoForm.appendChild(notesLabel);
+
+    const notesInput = document.createElement("input");
+    notesInput.type = "text";
+    notesInput.id = "task-notes";
+    notesInput.name = "task-notes";
+    todoForm.appendChild(notesInput);
+
+
 
     const priorityLabel = document.createElement("label");
     priorityLabel.textContent = "Priority:";
@@ -69,7 +81,7 @@ function createTodoForm() {
     todoForm.appendChild(submitButton);
    
     const cancelButton = document.createElement("button");
-    cancelButton.type = "submit";
+    cancelButton.type = "button";
     cancelButton.id = "cancel-button";
     cancelButton.textContent = "Cancel";
     todoForm.appendChild(cancelButton);
@@ -77,34 +89,49 @@ function createTodoForm() {
     return todoForm;
 }
 
+
 addTaskButton.addEventListener("click", () => {
     const mainContentArea = document.getElementById("main-content");
-    const todoForm = createTodoForm();
-
+    
     if (mainContentArea) {
-        mainContentArea.innerHTML = "";
+        mainContentArea.textContent = "";
+        mainContentArea.classList.add("form-mode");
+        
+        const todoForm = createTodoForm();
         mainContentArea.appendChild(todoForm);
+        
+        const cancelBtn = todoForm.querySelector("#cancel-button");
+        cancelBtn.addEventListener("click", () => {
+            mainContentArea.classList.remove("form-mode");
+            mainContentArea.textContent = "";
+            // todoForm.remove();
+            
+            const refreshedMainContent = createMainContent();
+            while (refreshedMainContent.firstChild) {
+                mainContentArea.appendChild(refreshedMainContent.firstChild);        
+            }
+        });
+        
+        todoForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            const newTask = {
+                title: todoForm.querySelector("#task-title").value,
+                description: todoForm.querySelector("#task-desc").value,
+                dueDate: todoForm.querySelector("#task-due-date").value,
+                priority: todoForm.querySelector("#task-priority").value,
+            };
+            
+            // console.log("New Task Added:", newTask);
+            
+            
+            
+            
+            
+            todoForm.reset();
+        });
     }
 
-    document.getElementById("cancel-button").addEventListener("click", (e) => {
-    todoForm.remove();
-});
-
-
-    todoForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        const newTask = {
-            title: todoForm.querySelector("#task-title").value,
-            description: todoForm.querySelector("#task-desc").value,
-            dueDate: todoForm.querySelector("#task-due-date").value,
-            priority: todoForm.querySelector("#task-priority").value,
-        };
-
-        console.log("New Task Added:", newTask);
-
-        todoForm.reset();
-    });
 });
 
 
