@@ -2,7 +2,7 @@ import "./side-menu.css";
 
 
 const addTaskButton = document.createElement("button");
-addTaskButton.textContent = "Add a new Task";
+addTaskButton.textContent = "New Task";
 addTaskButton.className = "project-buttons";
 addTaskButton.id = "add-task-button";
 
@@ -33,7 +33,7 @@ searchButton.id = "search-button";
 sideMenuContent.appendChild(searchButton);
 
 const myProjects = document.createElement("div");
-myProjects.textContent = "Projects";
+myProjects.textContent = "PROJECTS";
 myProjects.id = "projects-section";
 sideMenuContent.appendChild(myProjects);
 
