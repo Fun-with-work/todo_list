@@ -15,16 +15,10 @@
     transition-duration: 5s;
 }
 
-#welcome-message {
-    font-size: 2.2rem;
-    /* font-weight: bold; */
-    margin-bottom: 1rem;
-}
-
-#message-info {
-    font-size: 1.2rem;
-    font-weight: bolder;
-    margin-bottom: 2rem;
+#main-content.form-mode {
+    background-image: none !important;
+    animation: none !important;
+    background-color: rgb(245, 245, 245);
 }
 
 #checklist-edited-image {
@@ -55,6 +49,24 @@
     /* align-items: center; */
     justify-content: center;
     flex-direction: column;
+}
+
+#welcome-message {
+    font-size: 2rem;
+    /* font-weight: bold; */
+    margin-bottom: 0.5rem;
+}
+
+#welcome-message2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#message-info {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
 }
 
 /* #work-image {
