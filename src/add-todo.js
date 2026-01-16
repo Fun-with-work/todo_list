@@ -54,8 +54,6 @@ function createTodoForm() {
     notesInput.name = "task-notes";
     todoForm.appendChild(notesInput);
 
-
-
     const priorityLabel = document.createElement("label");
     priorityLabel.textContent = "Priority:";
     priorityLabel.htmlFor = "task-priority";
@@ -89,7 +87,6 @@ function createTodoForm() {
     return todoForm;
 }
 
-
 addTaskButton.addEventListener("click", () => {
     const mainContentArea = document.getElementById("main-content");
     
@@ -122,12 +119,8 @@ addTaskButton.addEventListener("click", () => {
                 priority: todoForm.querySelector("#task-priority").value,
             };
             
-            // console.log("New Task Added:", newTask);
-            
-            
-            
-            
-            
+            console.log("New Task Added:", newTask);
+           
             todoForm.reset();
         });
     }
