@@ -25,12 +25,5 @@ messageInfo.textContent = "Press the NEW TASK button to get started or PROJECTS 
 messageInfo.id = "message-info";
 tasksContainer.appendChild(messageInfo);
 
-
-// const tasksHeading = document.createElement("h2");
-// tasksHeading.textContent = "All Tasks";
-// tasksHeading.id = "tasks-heading";
-// tasksContainer.appendChild(tasksHeading);  
-
 return mainContent;
-
 }
