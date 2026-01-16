@@ -1,1 +1,0 @@
-export const list = "TO DO LIST";
