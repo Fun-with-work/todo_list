@@ -8,6 +8,19 @@ addTaskButton.id = "add-task-button";
 
 export { addTaskButton };
 
+const searchButton = document.createElement("button");
+searchButton.textContent = "SEARCH 🔎";
+searchButton.className = "project-buttons";
+searchButton.id = "search-button";
+
+export { searchButton };
+
+const myProjects = document.createElement("div");
+myProjects.textContent = "PROJECTS";
+myProjects.id = "projects-section";
+
+export { myProjects };
+
 export function createSideMenu() {
 const sideMenu = document.createElement("div");
 sideMenu.id = "side-menu";
@@ -25,16 +38,7 @@ sideMenu.appendChild(sideMenuContent);
 
 
 sideMenuContent.appendChild(addTaskButton);
-
-const searchButton = document.createElement("button");
-searchButton.textContent = "SEARCH 🔎";
-searchButton.className = "project-buttons";
-searchButton.id = "search-button";
 sideMenuContent.appendChild(searchButton);
-
-const myProjects = document.createElement("div");
-myProjects.textContent = "PROJECTS";
-myProjects.id = "projects-section";
 sideMenuContent.appendChild(myProjects);
 
 return sideMenu;
