@@ -1,6 +1,4 @@
 import "./main-content.css";
-// import { businessmanImage, checklistEditedImage } from "./image-variables";
-
 export function createMainContent() {   
 
 const mainContent = document.createElement("div");
@@ -23,7 +21,7 @@ welcomeMessage2.id = "welcome-message2";
 tasksContainer.appendChild(welcomeMessage2);
 
 const messageInfo = document.createElement("p");
-messageInfo.textContent = "Press the New Task button to get started or Projects to view current tasks";
+messageInfo.textContent = "Press the NEW TASK button to get started or PROJECTS to view current tasks";
 messageInfo.id = "message-info";
 tasksContainer.appendChild(messageInfo);
 
