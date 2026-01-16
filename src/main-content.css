@@ -1,5 +1,4 @@
 #main-content {
-    background-color:  rgb(240, 245, 198);
     height: 100%;
     float:right;
     display: flex;
@@ -18,19 +17,13 @@
 #main-content.form-mode {
     background-image: none !important;
     animation: none !important;
-    background-color: rgb(245, 245, 245);
-}
-
-#checklist-edited-image {
-    background-size: cover;
-    background-position: center;
-    animation: imageSwitch 50s infinite;
-    transition-duration: 5s;
+    background-color: rgb(218, 232, 202);
+    
 }
 
 @keyframes imageSwitch {
     0% {background-image: url('./images/businessman.jpg');}
-    50% {background-image: url('./images/checklist-edited.jpg');}
+    50% {background-image: url('./images/check-marks.jpg');}
     100% {background-image: url('./images/businessman.jpg');}
 }
 
@@ -39,14 +32,11 @@
     height: 25%;
     background-color: rgb(255, 255, 255, 0.6);
     border: 1px solid rgb(222, 223, 220, 0.8);
-    border-radius: 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    overflow-y: auto;
-    /* background-image: url('./images/businessman.jpg');
-    background-size: cover;
-    background-position: center; */
+    overflow-y: hidden;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
 }
@@ -68,13 +58,3 @@
     font-weight: bolder;
     margin-bottom: 2rem;
 }
-
-/* #work-image {
-    width: auto;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-} */
