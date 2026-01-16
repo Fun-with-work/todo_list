@@ -18,7 +18,6 @@
     background-image: none !important;
     animation: none !important;
     background-color: rgb(218, 232, 202);
-    
 }
 
 @keyframes imageSwitch {
@@ -43,7 +42,6 @@
 
 #welcome-message {
     font-size: 2rem;
-    /* font-weight: bold; */
     margin-bottom: 0.5rem;
 }
 
